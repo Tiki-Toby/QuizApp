@@ -5,27 +5,25 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    tools:ignore="MissingDefaultResource">
+    tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/main_activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@color/purple_500"
-        app:title="Wellcome"
-        app:titleCentered="true"
+        app:title="Welcome"
         app:titleTextColor="@color/white"
-        app:navigationIconTint="@color/white"
+        android:theme="@style/ToolBatTitle.Title"
         />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="90"
-
-        tools:layout="@layout/fragment_name_input" />
+        android:layout_weight="75"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/main_menu_fragment_nav" />
 
 </LinearLayout>

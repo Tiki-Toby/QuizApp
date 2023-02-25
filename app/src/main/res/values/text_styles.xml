@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="default_button_style">
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:backgroundTint">@color/purple_500</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="ToolBatTitle">
+        <item name="android:background">@color/purple_500</item>
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolBatTitle.Title">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+</resources>
