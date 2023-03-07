@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.solia.quizapp.R
 import com.solia.quizapp.databinding.FragmentMainMenuBinding
@@ -17,7 +16,7 @@ class MainMenuFragment : Fragment(R.layout.fragment_main_menu) {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMainMenuBinding.inflate(inflater, container, false)
 
         binding.mainMenuSettingsButton.setOnClickListener { setSettingsFragment() }

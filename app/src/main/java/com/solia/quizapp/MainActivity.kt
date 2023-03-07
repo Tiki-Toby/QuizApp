@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = WellcomeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         setSupportActionBar(binding.mainActivityToolbar)
     }
 }
