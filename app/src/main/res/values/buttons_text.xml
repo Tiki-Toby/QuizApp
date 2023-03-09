@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="play_last">Last: </string>
+    <string name="play">Play</string>
+    <string name="settings">Settings</string>
+    <string name="editor">Editor</string>
     <string name="confirm_button">Commit</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="exit">Exit</string>
-    <string name="settings">Settings</string>
-    <string name="play">Play</string>
 </resources>
