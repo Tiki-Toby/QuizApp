@@ -3,14 +3,13 @@
     <style name="default_button_style">
         <item name="android:textAlignment">center</item>
         <item name="android:gravity">center</item>
-        <item name="android:backgroundTint">@color/purple_500</item>
+        <item name="android:backgroundTint">@color/secondary_palette_blue</item>
         <item name="android:textSize">35sp</item>
-        <item name="android:layout_height">120dp</item>
     </style>
 
     <style name="ToolBatTitle">
-        <item name="android:background">@color/purple_500</item>
-        <item name="android:titleTextColor">@color/white</item>
+        <item name="android:background">@color/secondary_palette_red</item>
+        <item name="android:textColorPrimary">@color/secondary_palette_white</item>
     </style>
 
     <style name="ToolBatTitle.Title">

@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.fragment.findNavController
 import com.solia.quizapp.R
 import com.solia.quizapp.databinding.FragmentSettingsBinding
@@ -18,10 +18,15 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSettingsBinding.inflate(inflater, container, false)
 
         binding.settingsBackButton.setOnClickListener { getBackFragment() }
+
+        val languages = resources.getStringArray(R.array.languages)
+        val arrayAdapter = ArrayAdapter(requireActivity(), R.layout.dropdown_item, languages)
+        val autocompleteTV = binding.spinner1
+        autocompleteTV.setAdapter(arrayAdapter)
 
         return binding.root
     }
